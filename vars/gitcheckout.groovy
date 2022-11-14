@@ -1,6 +1,4 @@
-def call (Map params){
-
-git branch: params.branch,
-url: params.url
-
+def checkout(String url, String branch) 
+{
+    git branch: "${branch}", url: "${url}"
 }
